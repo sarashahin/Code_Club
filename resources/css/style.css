@@ -18,7 +18,13 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
-
+/* ----------------------------------------------- */
+/* Coulours */
+/* ----------------------------------------------- */
+/*
+red colour: #b11212;
+orange colour:#e96700;
+*/
 
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -28,7 +34,6 @@ body {
 .row {
     max-width: 1140px;
     margin: 0 auto;
-    border:1px solid blue;
 }
 
 section {
@@ -116,6 +121,43 @@ h1{
 .btn-ghost:active {
     border: 1px solid #cf6d17;
     color: #fff;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+/* Main navigation */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #b11212;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: bold;
+    border-bottom: 2px solid transparent; /*not visible until hovered*/
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
 }
 
 
