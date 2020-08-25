@@ -53,6 +53,61 @@ section {
     padding: 80px 0;
 }
 
+/* Main navigation */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #b11212;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: bold;
+    border-bottom: 2px solid transparent; /*not visible until hovered*/
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #e96700;
+    background-color: rgba(165, 42, 42, 0.137);
+    border-bottom: 2px solid #e96700;
+}
+
+/* Sticky Main navigation */
+.sticky {
+    position: fixed; /* use fixed positioning to stick navigation to top of page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(233, 218, 0, 0.8);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999; /* make sure sticky navigation is always stacked on top of all other elements*/
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
+
+
 /* ----- HEADINGS ----- */
 h1,
 h2,
@@ -240,41 +295,14 @@ header  h1{
     margin-top: 20px;
 }
 
-
-
-
-
-/* Main navigation */
-.main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 55px;
+.logo-black { 
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
 }
 
-.main-nav li {
-    display: inline-block;
-    margin-left: 40px;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-    padding: 8px 0;
-    color: #b11212;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
-    font-weight: bold;
-    border-bottom: 2px solid transparent; /*not visible until hovered*/
-    -webkit-transition: border-bottom 0.2s;
-    transition: border-bottom 0.2s;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active {
-    color: #e96700;
-    background-color: rgba(165, 42, 42, 0.137);
-    border-bottom: 2px solid #e96700;
-}
 
 
 /* ----------------------------------------------- */
