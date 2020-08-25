@@ -66,4 +66,27 @@ $(document).ready(function() {
     }
     });
 
-  });
+
+    /* Animations on scroll */
+    /* fade in content in the #about section */
+    $('.js--wp-1').waypoint(function(direction) {
+        $('.js--wp-1').addClass('animated fadeIn');
+    }, {
+        offset: '50%'
+    });
+
+    /* fade in mobile phone image in get #involved section */
+    $('.js--wp-2').waypoint(function(direction) {
+        $('.js--wp-2').addClass('animated fadeInLeft');
+    }, {
+        offset: '50%'
+    });
+
+    /* Add pulse effect to cards in #cities section */
+    $('.js--wp-3').waypoint(function(direction) {
+        $('.js--wp-3').addClass('animated pulse');
+    }, {
+        offset: '50%'
+    });
+
+  }); //end of $(document).ready(function(){}

@@ -714,3 +714,33 @@ footer p {
 
 
 
+/* ----------------------------------------------- */
+/* Animations */
+/* used prefix js--wp -- to indicate way points
+/* library being used in script.js file
+/* ----------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2
+{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-3 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+/*use the and selector to target element wich have both classes
+* for example js--wp-1 and also animated classes
+*/
+.js--wp-1.animated,
+.js--wp-2.animated{
+    opacity: 1;
+}
+
+
+
+
