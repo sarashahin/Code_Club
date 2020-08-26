@@ -56,6 +56,7 @@ section {
 /* Main navigation */
 .main-nav {
     float: right;
+    display: block; 
     list-style: none;
     margin-top: 55px;
 }
@@ -73,27 +74,39 @@ section {
     text-transform: uppercase;
     font-size: 90%;
     font-weight: bold;
-    border-bottom: 2px solid transparent; /*not visible until hovered*/
+    border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    color: #e96700;
-    background-color: rgba(165, 42, 42, 0.137);
-    border-bottom: 2px solid #e96700;
+    border-bottom: 2px solid #e67e22;
 }
 
-/* Sticky Main navigation */
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+/* Sticky navi */
 .sticky {
-    position: fixed; /* use fixed positioning to stick navigation to top of page */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(233, 218, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 2px #efefef;
-    z-index: 9999; /* make sure sticky navigation is always stacked on top of all other elements*/
+    z-index: 9999;
 }
 
 .sticky .main-nav { margin-top: 18px; }
@@ -105,7 +118,7 @@ section {
 }
 
 .sticky .logo { display: none; }
-.sticky .logo-black { display: block; }
+.sticky .logo-black { display: block; }}
 
 
 /* ----- HEADINGS ----- */
@@ -227,6 +240,7 @@ input[type=submit] {
 .btn-ghost:visited {
     border: 1px solid #e67e22;
     color: #e67e22;
+    background-color: rgba(231, 227, 223, 0.2);
 }
 
 .btn:hover,
