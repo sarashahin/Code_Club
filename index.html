@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="resources/css/queries.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header role="banner">
+        <nav role="navigation">
             <div class="row">
                 <img src="resources/img/logo-white.png" alt="Code cLub logo" class="logo">
                 <img src="resources/img/logo.png" alt="Code cLub logo" class="logo-black">
@@ -46,7 +46,7 @@
         </div>
     </header>
 
-    <section class="section-about js--section-features" id="about">
+    <section class="section-about js--section-features" id="about" role="main">
         <div class="row">
             <h2>Teach Your Kids to Code &mdash; make coding fun!</h2>
             <p class="long-copy">
@@ -82,7 +82,7 @@
         </div>   
     </section>
 
-    <section class="section-projects" id="projects">
+    <section class="section-projects" id="projects" role="projects">
         <ul class="projects-showcase clearfix">
             <li>
                 <figure class="projects-photo">
@@ -129,7 +129,7 @@
         </ul>
     </section>
 
-    <section class="section-involved" id="involved">
+    <section class="section-involved" id="involved" role="get involved">
         <div class="row">
             <h2>Get involved &mdash; Simple as 1, 2, 3</h2>
         </div>
@@ -157,7 +157,7 @@
         </div>
     </section>
 
-    <section class="section-cities" id="cities">
+    <section class="section-cities" id="cities" role="locations">
         <div class="row">
             <h2>Our Code Club locations around the world!</h2>
         </div>
@@ -257,7 +257,7 @@
     
     </section><!--end of .section-cities-->
 
-    <div class="bg-video">
+    <div class="bg-video" role="video">
         <video class="bg-video__content" autoplay muted loop>
             <source src="resources/video/video.mp4" type="video/mp4">
             Your browser is not supported!
@@ -266,7 +266,7 @@
 
 
 
-    <section class="section-signup" id="signup">
+    <section class="section-signup" id="signup" role="sign up">
         <div class="row">
             <h2>We're happy to hear from you</h2>
         </div>
@@ -306,7 +306,7 @@
                         <label>Newsletter?</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="checkbox" name="news" id="news" checked> Yes, please
+                        <input type="checkbox" name="news" id="news" aria-checked="true" aria-label="news"> Yes, please
                     </div>
                 </div>
                 <div class="row">
@@ -314,7 +314,7 @@
                         <label>Drop us a line</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <textarea name="message" placeholder="Your message"></textarea>
+                        <textarea name="message" placeholder="Your message" aria-label="Your message"></textarea>
                     </div>
                 </div>
                 <div class="row">
@@ -332,7 +332,7 @@
     </section>
 
             
-    <footer>
+    <footer role="footer">
         <div class="row">
             <div class="col span-2-of-3">
                 <ul class="footer-nav">
@@ -347,10 +347,10 @@
             </div>
             <div class="col span-1-of-3">
                 <ul class="social-links">
-                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="https://github.com/sarashahin/Code_Club"><i class="ion-social-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/sara-shahin-maat-3a842929/"><i class="ion-social-linkedin"></i></a></li>
+                    <li><a href="#" aria-label="facebook link"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#" aria-label="twitter link"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="https://github.com/sarashahin/Code_Club" aria-label="github link"><i class="ion-social-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/sara-shahin-maat-3a842929/" aria-label="linkedIn link"><i class="ion-social-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
